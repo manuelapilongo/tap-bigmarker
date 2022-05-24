@@ -1,0 +1,184 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "first_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BMID": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "coupon": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "registration_date": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "time_zone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "active_consent": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "traffic_source": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "referral_domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tracking_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "attended?": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "watched_on_demand": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "on_demand_duration": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "duration": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "engaged": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "chats": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qa": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "polls": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "polls_info": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "question": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "answer": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
+    "rating": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "comment": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "banned": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recording_duration": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

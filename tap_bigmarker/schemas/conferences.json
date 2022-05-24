@@ -1,0 +1,395 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "event_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "language": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "meeting_mode": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "copy_webinar_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "master_webinar_id": {
+      "type": [
+        "null"
+      ]
+    },
+    "max_attendance": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "purpose": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "start_time": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "duration": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "conference_address": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "custom_event_id": {
+      "type": [
+        "null"
+      ]
+    },
+    "channel_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "webcast_mode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "end_time": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "moderator_open_time": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "audience_open_time": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "first_admin_enter_time": {
+      "type": [
+        "null"
+      ]
+    },
+    "manual_end_time": {
+      "type": [
+        "null"
+      ]
+    },
+    "dial_in_information": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "dial_in_number": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "dial_in_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "dial_in_passcode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "presenter_dial_in_number": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "presenter_dial_in_id": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "presenter_dial_in_passcode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "privacy": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "exit_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "enable_registration_email": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enable_knock_to_enter": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "send_reminder_emails_to_presenters": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enable_review_emails": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "can_view_poll_results": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enable_ie_safari": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "enable_twitter": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "auto_invite_all_channel_members": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "send_cancellation_email": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "show_reviews": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "registration_required_to_view_recording": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "who_can_watch_recording": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "show_handout_on_page": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "room_logo": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "preload_files": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "file_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "file_type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "file_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
+    "disclaimer": {
+      "type": [
+        "null"
+      ]
+    },
+    "recorded": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "webinar_stats": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "registrants": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "revenue": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "total_attendees": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "page_views": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "invited": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        }
+      }
+    },
+    "associated_series": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "title": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "series_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "format": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "public_url": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

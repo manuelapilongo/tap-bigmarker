@@ -1,0 +1,50 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "admin_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "first_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bio": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bmid": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

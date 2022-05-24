@@ -1,0 +1,78 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "question_title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "answer_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "choice_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_review_question": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "responses": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "review_response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "review": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "created_at": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "email": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "name": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

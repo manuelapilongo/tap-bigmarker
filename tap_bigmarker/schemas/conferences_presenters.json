@@ -1,0 +1,152 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "presenter_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "member_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "conference_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "display_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "display_on_landing_page": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "presenter_image_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "first_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "presenter_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "presenter_dial_in_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "presenter_dial_in_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "presenter_dial_in_passcode": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "title": {
+      "type": [
+        "null"
+      ]
+    },
+    "bio": {
+      "type": [
+        "null"
+      ]
+    },
+    "can_manage": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "is_moderator": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "facebook": {
+      "type": [
+        "null"
+      ]
+    },
+    "twitter": {
+      "type": [
+        "null"
+      ]
+    },
+    "linkedin": {
+      "type": [
+        "null"
+      ]
+    },
+    "website": {
+      "type": [
+        "null"
+      ]
+    },
+    "enter_as_attendee": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "remove_bigmarker_contact_option": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "show_on_networking_center": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "show_chat_icon_in_booth_or_session_room": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "first_name": {
+      "type": [
+        "null"
+      ]
+    },
+    "last_name": {
+      "type": [
+        "null"
+      ]
+    },
+    "email": {
+      "type": [
+        "null"
+      ]
+    },
+    "BMID": {
+      "type": [
+        "null"
+      ]
+    },
+    "registration_date": {
+      "type": [
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "null"
+      ]
+    },
+    "time_zone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "active_consent": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "traffic_source": {
+      "type": [
+        "null"
+      ]
+    },
+    "referral_domain": {
+      "type": [
+        "null"
+      ]
+    },
+    "tracking_code": {
+      "type": [
+        "null"
+      ]
+    },
+    "attended?": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "watched_on_demand": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "on_demand_duration": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "duration": {
+      "type": [
+        "null"
+      ]
+    },
+    "engaged": {
+      "type": [
+        "null"
+      ]
+    },
+    "chats": {
+      "type": [
+        "null"
+      ]
+    },
+    "qa": {
+      "type": [
+        "null"
+      ]
+    },
+    "polls": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "polls_info": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "question": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "answer": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
+    "rating": {
+      "type": [
+        "null"
+      ]
+    },
+    "comment": {
+      "type": [
+        "null"
+      ]
+    },
+    "banned": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recording_duration": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "enter_time": {
+      "type": [
+        "null"
+      ]
+    },
+    "exit_time": {
+      "type": [
+        "null"
+      ]
+    },
+    "OS": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "browser": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "downloaded": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "channel_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "channel_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "overview": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

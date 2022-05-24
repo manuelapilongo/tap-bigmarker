@@ -1,0 +1,196 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bmid": {
+      "type": [
+        "null"
+      ]
+    },
+    "conference_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "email": {
+      "type": [
+        "null"
+      ]
+    },
+    "first_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "last_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "questions": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "user_name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "user_email": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "vote_count": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "answered": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "archived": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "source_from": {
+            "type": [
+              "null"
+            ]
+          },
+          "created_at": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "question": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      }
+    },
+    "edited_in_room_display_name": {
+      "type": [
+        "null"
+      ]
+    },
+    "browser_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "browser_version": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "device_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "entered_at": {
+      "type": [
+        "null"
+      ]
+    },
+    "leaved_at": {
+      "type": [
+        "null"
+      ]
+    },
+    "total_duration": {
+      "type": [
+        "null"
+      ]
+    },
+    "engaged_duration": {
+      "type": [
+        "null"
+      ]
+    },
+    "chats_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qas_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "time_zone": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "polls_count": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "attendance_monitor": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "show_popup": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "click_popup": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        }
+      }
+    }
+  }
+}
