@@ -12,7 +12,8 @@
     },
     "bmid": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "conference_id": {
@@ -23,7 +24,8 @@
     },
     "email": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "first_name": {
@@ -81,7 +83,8 @@
           },
           "source_from": {
             "type": [
-              "null"
+               "null",
+        "string"
             ]
           },
           "created_at": {
@@ -101,7 +104,8 @@
     },
     "edited_in_room_display_name": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "browser_name": {
@@ -124,22 +128,26 @@
     },
     "entered_at": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "leaved_at": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "total_duration": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "engaged_duration": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "chats_count": {

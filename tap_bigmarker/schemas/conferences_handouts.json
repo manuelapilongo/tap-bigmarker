@@ -24,7 +24,8 @@
     },
     "handout_link": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "handout_url": {

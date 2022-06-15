@@ -48,7 +48,8 @@
     },
     "master_webinar_id": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "max_attendance": {
@@ -72,7 +73,7 @@
     "duration": {
       "type": [
         "null",
-        "integer"
+        "string"
       ]
     },
     "conference_address": {
@@ -83,7 +84,8 @@
     },
     "custom_event_id": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "channel_id": {
@@ -118,12 +120,14 @@
     },
     "first_admin_enter_time": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "manual_end_time": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "dial_in_information": {
@@ -306,7 +310,8 @@
     },
     "disclaimer": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "recorded": {

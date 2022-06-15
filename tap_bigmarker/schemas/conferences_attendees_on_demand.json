@@ -12,32 +12,38 @@
     },
     "first_name": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "last_name": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "email": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "BMID": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "registration_date": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "country": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "time_zone": {
@@ -54,17 +60,20 @@
     },
     "traffic_source": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "referral_domain": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "tracking_code": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "attended?": {
@@ -87,22 +96,26 @@
     },
     "duration": {
       "type": [
-        "null"
+        "null",
+        "string"
       ]
     },
     "engaged": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "chats": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "qa": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "polls": {
@@ -139,12 +152,14 @@
     },
     "rating": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "comment": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "banned": {
@@ -161,12 +176,14 @@
     },
     "enter_time": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "exit_time": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "OS": {

@@ -84,12 +84,14 @@
     },
     "title": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "bio": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "can_manage": {
@@ -106,22 +108,26 @@
     },
     "facebook": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "twitter": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "linkedin": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "website": {
       "type": [
-        "null"
+         "null",
+        "string"
       ]
     },
     "enter_as_attendee": {
