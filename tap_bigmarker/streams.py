@@ -51,7 +51,8 @@ class ChannelsAdminsStream(BigMarkerStream):
 
 class ConferencesStream(BigMarkerStream):
     name = "conferences"
-    path = "/conferences"
+    path = "/conferences/search/"
+    rest_method = "POST"
     records_jsonpath = "$.conferences[*]"
     primary_keys = ["id"]
     replication_method = "FULL_TABLE"
