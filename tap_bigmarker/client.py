@@ -102,8 +102,4 @@ class BigMarkerStream(RESTStream):
         yield from extract_jsonpath(self.records_jsonpath, input=response.json())
 
     def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
-        def _backoff_from_headers(retriable_api_error):
-            response_headers = retriable_api_error.response.headers
-            return int(response_headers.get("Retry-After", 0))
-
-        return self.backoff_runtime(value=_backoff_from_headers)
+        return backoff.expo(factor=1.2)  # type: ignore # ignore 'Returning Any'
