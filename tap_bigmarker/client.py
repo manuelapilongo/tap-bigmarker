@@ -102,5 +102,5 @@ class BigMarkerStream(RESTStream):
         """Parse the response and return an iterator of result rows."""
         yield from extract_jsonpath(self.records_jsonpath, input=response.json())
 
-    def backoff_wait_generator() -> Callable[..., Generator[int, Any, None]]:
+    def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
         return backoff.expo(factor=1.2)  # type: ignore # ignore 'Returning Any'
