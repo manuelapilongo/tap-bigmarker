@@ -3,7 +3,7 @@
 from pickle import NONE
 import requests
 from pathlib import Path
-from typing import Any, Dict, Optional, Union, List, Iterable
+from typing import Any, Callable, Dict, Generator, Optional, Union, List, Iterable
 
 from memoization import cached
 
@@ -100,3 +100,10 @@ class BigMarkerStream(RESTStream):
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
         """Parse the response and return an iterator of result rows."""
         yield from extract_jsonpath(self.records_jsonpath, input=response.json())
+
+    def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
+        def _backoff_from_headers(retriable_api_error):
+            response_headers = retriable_api_error.response.headers
+            return int(response_headers.get("Retry-After", 0))
+
+        return self.backoff_runtime(value=_backoff_from_headers)
