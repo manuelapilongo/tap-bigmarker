@@ -1,17 +1,15 @@
 """REST client handling, including BigMarkerStream base class."""
 
-import backoff
-from pickle import NONE
-import requests
 from pathlib import Path
-from typing import Any, Callable, Dict, Generator, Optional, Union, List, Iterable
+from pickle import NONE
+from typing import Any, Callable, Dict, Generator, Iterable, Optional
 
+import backoff
+import requests
 from memoization import cached
-
+from singer_sdk.authenticators import APIKeyAuthenticator
 from singer_sdk.helpers.jsonpath import extract_jsonpath
 from singer_sdk.streams import RESTStream
-from singer_sdk.authenticators import APIKeyAuthenticator
-
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 
@@ -103,4 +101,4 @@ class BigMarkerStream(RESTStream):
         yield from extract_jsonpath(self.records_jsonpath, input=response.json())
 
     def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
-        return backoff.expo(factor=1.2)  # type: ignore # ignore 'Returning Any'
+        return backoff.constant(interval=10)  # type: ignore # ignore 'Returning Any'
