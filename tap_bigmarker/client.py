@@ -12,7 +12,7 @@ from singer_sdk.helpers.jsonpath import extract_jsonpath
 from singer_sdk.streams import RESTStream
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
-
+from singer_sdk.exceptions import RetriableAPIError
 
 class BigMarkerStream(RESTStream):
     """BigMarker stream class."""
@@ -102,3 +102,30 @@ class BigMarkerStream(RESTStream):
 
     def backoff_wait_generator(self) -> Callable[..., Generator[int, Any, None]]:
         return backoff.constant(interval=10)  # type: ignore # ignore 'Returning Any'
+
+    def request_decorator(self, func: Callable) -> Callable:
+        """Instantiate a decorator for handling request failures.
+
+        Uses a wait generator defined in `backoff_wait_generator` to
+        determine backoff behaviour. Try limit is defined in
+        `backoff_max_tries`, and will trigger the event defined in
+        `backoff_handler` before retrying. Developers may override one or
+        all of these methods to provide custom backoff or retry handling.
+
+        Args:
+            func: Function to decorate.
+
+        Returns:
+            A decorated method.
+        """
+        decorator: Callable = backoff.on_exception(
+            self.backoff_wait_generator,
+            (
+                RetriableAPIError,
+                requests.exceptions.ReadTimeout,
+                requests.exceptions.ConnectionError,
+            ),
+            max_tries=self.backoff_max_tries,
+            on_backoff=self.backoff_handler,
+        )(func)
+        return decorator
