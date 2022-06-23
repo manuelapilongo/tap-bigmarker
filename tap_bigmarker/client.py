@@ -22,7 +22,7 @@ class BigMarkerStream(RESTStream):
     per_page = 100
     page_key = "page"
     has_pagination = True
-    backoff_max_tries = 9
+    backoff_max_tries = 9999
 
     @property
     def url_base(self) -> str:
