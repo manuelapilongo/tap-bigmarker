@@ -89,10 +89,11 @@ class BigMarkerStream(RESTStream):
     ) -> Dict[str, Any]:
         """Return a dictionary of values to be used in URL parameterization."""
         params: dict = {}
-        if next_page_token:
-            params[self.page_key] = next_page_token
-        if self.per_page:
-            params["per_page"] = self.per_page
+        if self.rest_method == "GET":
+            if next_page_token:
+                params[self.page_key] = next_page_token
+            if self.per_page:
+                params["per_page"] = self.per_page
 
         return params
 
