@@ -1,5 +1,6 @@
 """REST client handling, including BigMarkerStream base class."""
 
+import logging
 from pathlib import Path
 from pickle import NONE
 from typing import Any, Callable, Dict, Generator, Iterable, Optional
@@ -105,20 +106,6 @@ class BigMarkerStream(RESTStream):
         return backoff.constant(interval=10)  # type: ignore # ignore 'Returning Any'
 
     def request_decorator(self, func: Callable) -> Callable:
-        """Instantiate a decorator for handling request failures.
-
-        Uses a wait generator defined in `backoff_wait_generator` to
-        determine backoff behaviour. Try limit is defined in
-        `backoff_max_tries`, and will trigger the event defined in
-        `backoff_handler` before retrying. Developers may override one or
-        all of these methods to provide custom backoff or retry handling.
-
-        Args:
-            func: Function to decorate.
-
-        Returns:
-            A decorated method.
-        """
         decorator: Callable = backoff.on_exception(
             self.backoff_wait_generator,
             (
@@ -130,3 +117,9 @@ class BigMarkerStream(RESTStream):
             on_backoff=self.backoff_handler,
         )(func)
         return decorator
+
+    def backoff_handler(self, details: dict) -> None:
+        if details["tries"] > 5:
+            logging.info("resetting session")
+            self._requests_session = None
+        return super().backoff_handler(details)
