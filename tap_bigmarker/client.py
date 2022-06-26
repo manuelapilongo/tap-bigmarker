@@ -7,10 +7,13 @@ from typing import Any, Callable, Dict, Generator, Iterable, Optional
 
 import backoff
 import requests
+import requests_random_user_agent
+
 from memoization import cached
 from singer_sdk.authenticators import APIKeyAuthenticator
 from singer_sdk.helpers.jsonpath import extract_jsonpath
 from singer_sdk.streams import RESTStream
+
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 from singer_sdk.exceptions import RetriableAPIError
@@ -39,16 +42,6 @@ class BigMarkerStream(RESTStream):
             value=self.config.get("api_key"),
             location="header"
         )
-
-    @property
-    def http_headers(self) -> dict:
-        """Return the http headers needed."""
-        headers = {}
-        if "user_agent" in self.config:
-            headers["User-Agent"] = self.config.get("user_agent")
-        # If not using an authenticator, you may also provide inline auth headers:
-        # headers["Private-Token"] = self.config.get("auth_token")
-        return headers
 
     def get_next_page_token(
         self, response: requests.Response, previous_token: Optional[Any]
@@ -121,5 +114,6 @@ class BigMarkerStream(RESTStream):
     def backoff_handler(self, details: dict) -> None:
         if details["tries"] > 5:
             logging.info("resetting session")
+            self._requests_session.close()
             self._requests_session = None
         return super().backoff_handler(details)

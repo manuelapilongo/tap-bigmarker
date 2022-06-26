@@ -564,6 +564,17 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 
 [[package]]
+name = "requests-random-user-agent"
+version = "2022.6.25"
+description = "Automatically generate a random User Agent for the requests library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = ">=2.0.1,<3.0.0"
+
+[[package]]
 name = "simplejson"
 version = "3.11.1"
 description = "Simple, fast, extensible JSON encoder/decoder for Python"
@@ -776,7 +787,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "<3.11,>=3.7.1"
-content-hash = "b5e26e68ba35941da5d479ba1098a18b3d083bb9673cfba3f0d332f924ed96ba"
+content-hash = "751c4c17f2e4fd16fe12b19bb0375e4afba015c52cf6a35fe8855cc8a17bdf24"
 
 [metadata.files]
 atomicwrites = [
@@ -1151,6 +1162,10 @@ pytzdata = [
 requests = [
     {file = "requests-2.27.1-py2.py3-none-any.whl", hash = "sha256:f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"},
     {file = "requests-2.27.1.tar.gz", hash = "sha256:68d7c56fd5a8999887728ef304a6d12edc7be74f1cfa47714fc8b414525c9a61"},
+]
+requests-random-user-agent = [
+    {file = "requests_random_user_agent-2022.6.25-py3-none-any.whl", hash = "sha256:1983c85d0af6fe3c537b54b202a2a1e473bc26c2c1ebd43fec6bec41eab6afad"},
+    {file = "requests_random_user_agent-2022.6.25.tar.gz", hash = "sha256:7f9bacfbba2d2036b09bfe01ecf42ad9eab2d40726fa9f89568440a7b3c11ec6"},
 ]
 simplejson = [
     {file = "simplejson-3.11.1-cp27-cp27m-win32.whl", hash = "sha256:38c2b563cd03363e7cb2bbba6c20ae4eaafd853a83954c8c8dd345ee391787bf"},
