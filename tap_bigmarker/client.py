@@ -23,7 +23,7 @@ class BigMarkerStream(RESTStream):
 
     # curr_page_token_jsonpath = "$.page"
     # totl_page_token_jsonpath = "$.total_pages"
-    per_page = 100
+    per_page = 10
     page_key = "page"
     has_pagination = True
     backoff_max_tries = 9999
