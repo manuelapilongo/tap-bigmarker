@@ -27,6 +27,7 @@ class BigMarkerStream(RESTStream):
     page_key = "page"
     has_pagination = True
     backoff_max_tries = 9999
+    _LOG_REQUEST_METRIC_URLS = True
 
     @property
     def url_base(self) -> str:
@@ -74,9 +75,6 @@ class BigMarkerStream(RESTStream):
             return int(previous_token or "1") + 1
 
         return None
-
-
-    # _LOG_REQUEST_METRIC_URLS = True
 
     def get_url_params(
         self, context: Optional[dict], next_page_token: Optional[Any]
